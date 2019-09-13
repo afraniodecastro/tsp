@@ -12,12 +12,12 @@ OBJS =  \
 	./obj/Menus.o \
 	./obj/Util.o \
 	./obj/main.o \
-	./obj/Descida.o
+	./obj/Descida.o \
+#	./obj/MS.o
 #	./obj/GRASP.o \
 #	./obj/AG.o \
 #	./obj/BT.o \
 #	./obj/ILS.o \
-#	./obj/MS.o \
 #	./obj/SimulatedAnnealing.o \
 #	./obj/VNS.o \ 
 #	./obj/Memeticos.o \
