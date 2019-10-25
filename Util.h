@@ -56,7 +56,7 @@ int busca_pos_valor(int *vetor, int cidade, int n);
 int foi_inserida(int *vetor, int cidade, int n);
 
 /* Calcula o desvio-padr�o das fos da popula��o */
-float calcula_desvio_padrao(float *fo_pop, int n);
+float calcula_desvio_padrao(vector<float> *fo_pop, int n);
 
 /* Atualiza a matriz de arestas */
 void atualiza_arestas(int **arestas, int n, int m, int prox_cid);

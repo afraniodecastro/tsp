@@ -207,17 +207,17 @@ int foi_inserida(int *vetor, int cidade, int n)
 }
 
 /* Calcula o desvio-padr�o das fos da popula��o */
-float calcula_desvio_padrao(float *fo_pop, int n)
+float calcula_desvio_padrao(vector<float> *fo_pop, int n)
 {
   float media, desvio, somatorio;
 
   somatorio = 0;
   for (int i = 0; i < n; i++)
-    somatorio += fo_pop[i];
+    somatorio += fo_pop->at(i);
   media = somatorio / n;
   somatorio = 0;
   for (int i = 0; i < n; i++)
-    somatorio += (fo_pop[i] - media) * (fo_pop[i] - media);
+    somatorio += (fo_pop->at(i) - media) * (fo_pop->at(i) - media);
   desvio = sqrt(somatorio / (n - 1));
 
   desvio = desvio / media;
